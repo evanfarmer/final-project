@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/index.js" defer="defer"></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100&display=swap");
+    </style>
+    <link
+      rel="shortcut icon"
+      href="../images/dice-icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <h1>Dice Game</h1>
+    <div class="dice">
+      <img class="dice1" src="../images/dice1.jpg" alt="dice1" />
+    </div>
+    <div class="dice">
+      <img class="dice2" src="../images/dice2.jpg" alt="dice2" />
+    </div>
+    <div class="dice">
+      <img class="dice3" src="../images/dice3.jpg" alt="dice3" />
+    </div>
+    <div class="dice">
+      <img class="dice4" src="../images/dice4.jpg" alt="dice4" />
+    </div>
+    <div class="dice">
+      <img class="dice5" src="../images/dice5.jpg" alt="dice5" />
+    </div>
+    <div class="dice">
+      <img class="dice6" src="../images/dice6.jpg" alt="dice6" />
+    </div>
+    <h2 id="center">Score Board</h2>
+    <div id="scoreboard">
+      <ul class="roundScore">
+        <li><strong>Round 1 Results</strong></li>
+        <li>
+          Computer:
+          <div id="computerR1Results"></div>
+        </li>
+        <li>
+          You:
+          <div id="youR1Results"></div>
+        </li>
+      </ul>
+      <ul class="roundScore">
+        <li><strong>Round 2 Results</strong></li>
+        <li>
+          Computer:
+          <div id="computerR2Results"></div>
+        </li>
+        <li>
+          You:
+          <div id="youR2Results"></div>
+        </li>
+      </ul>
+      <ul class="roundScore">
+        <li><strong>Round 3 Results</strong></li>
+        <li>
+          Computer:
+          <div id="computerR3Results"></div>
+        </li>
+        <li>
+          You:
+          <div id="youR3Results"></div>
+        </li>
+      </ul>
+    </div>
+    <div id="row">
+      <div id="you">
+        <h2>You</h2>
+        <p id="You"></p>
+        <div class="diceImages">
+          <img id="youDice1" src="" alt="" />
+          <img id="youDice2" src="" alt="" />
+        </div>
+        <button id="roll">
+          <img
+            class="dice-button"
+            src="../images/dice-icon.png"
+            alt="dice-icon"
+          />
+        </button>
+      </div>
+      <div id="computer">
+        <h2>Computer</h2>
+        <p id="Computer"></p>
+        <div class="diceImages">
+          <img id="computerDice1" src="" alt="" />
+          <img id="computerDice2" src="" alt="" />
+        </div>
+      </div>
+    </div>
+    <div id="popup">
+      <button>New Game</button>
+      <p id="popupText"></p>
+    </div>
+    <div class="rules">
+      <h2>Rules</h2>
+      <button id="hide">Hide</button><button id="show">Show</button>
+      <p id="rules">
+        - If any of the players two dice comes up as a 1 then the score for that
+        round for the player is 0.<br />
+        - If the player rolls a pair of the same numbers then the players score
+        is the total of the two dice times 2.<br />
+        - If the player rolls any other combination of dice other than the ones
+        mentioned above then the players score is the total value of the two
+        dice.
+      </p>
+    </div>
+    <footer>
+      <h2>Evan Farmer | Comp 2132</h2>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  background: #142d4c;
+  max-width: 1000px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  color: #ececec;
+  font-family: "Montserrat", sans-serif;
+}
+
+.dice {
+  display: inline-block;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 9.5%;
+}
+
+.dice1,
+.dice2,
+.dice3,
+.dice4,
+.dice5,
+.dice6 {
+  height: 45px;
+  width: auto;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dice-button {
+  height: 25px;
+  width: auto;
+  background-color: #ececec;
+}
+
+h1 {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#you {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  background-color: #9fd3c7;
+  border: solid 6px #ececec;
+  color: #142d4c;
+  height: 200px;
+  margin: 10px;
+}
+
+#computer {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  background-color: #385170;
+  border: solid 6px #ececec;
+  height: 200px;
+  margin: 10px;
+}
+
+#scoreboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#r1Results,
+#r2Results,
+#r3Results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+  min-width: 30%;
+  min-height: 25%;
+}
+
+#scoreboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.roundScore {
+  min-width: 33%;
+  list-style-type: none;
+}
+
+#roll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding: 5px;
+  margin-top: 30px;
+}
+
+#roll :hover {
+  cursor: pointer;
+}
+
+.rules {
+  background: #ececec;
+  color: #142d4c;
+  padding: 15px;
+  border: solid 6px #9fd3c7;
+  margin: 10px;
+}
+
+#center {
+  margin-top: 15px;
+  background-color: #9fd3c7;
+  color: #142d4c;
+}
+
+#scoreboard {
+  background: #385170;
+  border: solid 6px #9fd3c7;
+  margin: 10px;
+  height: 150px;
+}
+
+h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+#youDice1,
+#youDice2,
+#computerDice1,
+#computerDice2 {
+  width: 50px;
+  margin: 10px;
+}
+
+.diceImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#hide,
+#show {
+  background: #9fd3c7;
+  margin: 10px;
+  border: solid 3px #142d4c;
+}
+
+#hide :hover,
+#show :hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #9fd3c7;
+  border: solid 6px #385170;
+  color: #142d4c;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+#youR1Results,
+#computerR1Results #youR2Results,
+#computerR2Results #youR3Results,
+#computerR3Results {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+#popup {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .dice5,
+  .dice6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 195%;
+  }
+  #scoreboard {
+    display: block;
+    height: 300px;
+  }
+  #r1Results,
+  #r2Results,
+  #r3Results {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    min-width: 100%;
+    min-height: 25%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
