@@ -92,7 +92,8 @@ h1 {
   justify-content: center;
   margin: auto;
   padding: 5px;
-  margin-top: 30px;
+  margin-top: auto;
+  margin-bottom: 0px;
 }
 #roll :hover {
   cursor: pointer;
@@ -151,11 +152,13 @@ footer {
   margin-top: 40px;
 }
 #youR1Results,
-#computerR1Results #youR2Results,
-#computerR2Results #youR3Results,
+#computerR1Results,
+#youR2Results,
+#computerR2Results,
+#youR3Results,
 #computerR3Results {
-  margin-left: auto;
-  margin-right: 0;
+  display: inline-flex;
+  margin-left: 10px;
 }
 #popup {
   display: none;
@@ -169,7 +172,7 @@ footer {
   }
   #scoreboard {
     display: block;
-    height: 300px;
+    height: 250px;
   }
   #r1Results,
   #r2Results,
